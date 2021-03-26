@@ -1,0 +1,80 @@
+/* Я бы использовал вместо CSS SASS препроцессор. */
+
+html {
+  margin-top : 0em ;
+  margin-bottom : 0em ;
+  margin-left : 0.5em ;
+  margin-right : 0.5em ;
+}
+
+body {
+  
+}
+
+nav {
+	padding: 0;
+	margin: 0;
+	margin-top: 2em ;
+}
+
+nav ul {
+  padding : 0 ;
+  margin : 0 ;
+  background-opacity : 0 ;
+  display : flex ;
+  flex-direction : row ;
+  flex-wrap : wrap ;
+  align-items : stretch ;
+}
+
+nav li {
+
+  list-style-type : none ;
+
+  background : #231f20 ;
+  color : #ffffff ;
+  padding-top : 1em ;
+  padding-bottom : 1em ;
+  padding-left : 2em ;
+  padding-right : 2em ;
+
+  text-align : center ;
+  display : block ;
+  
+  border-style : solid ;
+  border-color : #eb5017 ;
+  border-width: 0 ;
+  border-right-width : 0.1em ;
+}
+
+nav li.choosen {
+  background: #eb5017 ;
+}
+nav li a {
+  text-decoration: none ;
+  color : #ffffff ;
+}
+
+header {
+  display : flex ;
+  flex-direction : row ;
+
+  margin-bottom : 2em ;
+}
+
+header .logo_container {
+  display : flex ;
+  flex-direction : row ;
+}
+
+header .text {
+  font-weight : bold ;
+}
+
+.uppercase {
+  text-transform : uppercase ;
+}
+
+.capitalize {
+  text-transform : capitalize ;
+}
