@@ -1,38 +1,82 @@
-/* Я бы использовал вместо CSS SASS препроцессор. */
+/* Я бы лучше использовал вместо чистого CSS SASS-препроцессор. */
 
 html {
   margin-top : 0em ;
   margin-bottom : 0em ;
   margin-left : 0.5em ;
   margin-right : 0.5em ;
+  font-family : sans-serif ;
 }
 
 body {
-  
+  position : related ;
 }
+
+/* Header. */
+
+header {
+  display : flex ;
+  flex-direction : row ;
+  margin-bottom : 2em ;
+}
+
+header img {
+}
+
+header .logo {
+  display : table ;
+}
+
+header .logo .text {
+  display : table-cell;
+  font-weight : bold ;
+  vertical-align : bottom ;
+  padding-left : 0.75em ;
+  padding-bottom : 0.75em ;
+}
+
+header .logo .text .uppercase {
+  text-transform : uppercase ;
+}
+
+header .logo .text .capitalize {
+  text-transform : capitalize ;
+}
+
+header .contacts {
+  align-self : center ;
+  display : table ;
+  margin-left : auto ;
+  margin-right : 1em ;
+  vertical-align : middle ;
+  font-size : 1.25em ;
+}
+
+header .contacts a {
+  display : table-row ;
+  color : #eb5017 ;
+  text-decoration : none ;
+}
+
+/* Navigation panel. */
 
 nav {
-	padding: 0;
-	margin: 0;
-	margin-top: 2em ;
-}
-
-nav ul {
   padding : 0 ;
-  margin : 0 ;
-  background-opacity : 0 ;
   display : flex ;
   flex-direction : row ;
   flex-wrap : wrap ;
-  align-items : stretch ;
+  justify-content : left ;
 }
 
-nav li {
+nav a:first-of-type {
+  padding-left : 4em ;
+}
 
-  list-style-type : none ;
+nav a {
+  color : #ffffff ;
+  text-decoration : none ;
 
   background : #231f20 ;
-  color : #ffffff ;
   padding-top : 1em ;
   padding-bottom : 1em ;
   padding-left : 2em ;
@@ -47,34 +91,39 @@ nav li {
   border-right-width : 0.1em ;
 }
 
-nav li.choosen {
+nav a.choosen {
   background: #eb5017 ;
 }
-nav li a {
-  text-decoration: none ;
+
+nav a:last-of-type {
+  border-right-style : none ;
+  padding-right : 4em ;
+}
+
+/* Footer. */
+
+footer {
+  z-index : 11 ;
+  position : fixed ;
+  left : 1em ;
+  right : 1em ;
+  bottom : 0 ;
+  display : flex ;
+  flex-direction : row ;
+  flex-wrap : wrap ;
+  justify-content : left ;
+
   color : #ffffff ;
+  background : #231f20 ;
+  padding-top : 0.5em ;
+  padding-bottom : 2em ;
 }
 
-header {
-  display : flex ;
-  flex-direction : row ;
-
-  margin-bottom : 2em ;
-}
-
-header .logo_container {
-  display : flex ;
-  flex-direction : row ;
-}
-
-header .text {
-  font-weight : bold ;
-}
-
-.uppercase {
-  text-transform : uppercase ;
-}
-
-.capitalize {
-  text-transform : capitalize ;
+footer a {
+  font-size : 0.75em ;
+  text-decoration : underlined ;
+  color : inherit ;
+  padding-right : 1em ;
+  padding-left : 1em ;
+  padding-top : 0.5em ;
 }
