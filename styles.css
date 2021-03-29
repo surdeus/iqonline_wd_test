@@ -15,7 +15,6 @@ html {
 }
 
 body {
-  position : related ;
 }
 
 /* Header. */
@@ -136,6 +135,15 @@ ul.breadcrumb li a {
 ul.breadcrumb li:last-of-type a {  
   text-decoration : none ;
 }
+
+/* Calculator. */
+
+form.line {
+  display : flex ;
+  flex-direction : row ;
+  flex-wrap : wrap ;
+}
+
 
 /* Footer. */
 
