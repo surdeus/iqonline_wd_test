@@ -43,6 +43,12 @@
 
 </nav>
 
+<ul class="breadcrumb">
+  <li><a href="#">Главная</a></li>
+  <li><a href="#">Вклады</a></li>
+  <li><a href="#">Калькулятор</a></li>
+</ul>
+
 <footer>
   <a href="#">Кредитные карты</a>
   <a href="#">Вклады</a>

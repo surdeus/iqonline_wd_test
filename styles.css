@@ -100,6 +100,37 @@ nav a:last-of-type {
   padding-right : 4em ;
 }
 
+/* Breadcrumb. */
+
+ul.breadcrumb {
+  padding : 0 ;
+  margin-left : 1.5em ;
+  list-style : none ;
+}
+
+ul.breadcrumb li {
+  color : #231f20 ;
+  display : inline ;
+  font-size : 0.75em ;
+}
+
+ul.breadcrumb li+li:before {
+  content : "- " ;
+}
+
+ul.breadcrumb li {
+  text-decoration : underlined ;
+}
+
+ul.breadcrumb li a {
+  color : inherit ;
+  text-decoration : underlined ;
+}
+
+ul.breadcrumb li:last-of-type a {  
+  text-decoration : none ;
+}
+
 /* Footer. */
 
 footer {
