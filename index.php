@@ -1,13 +1,9 @@
-<!doctype html>
-<!-- В задании не было указано, как страница
-     должна отображаться при разных размерах,
-     так что для соответсвия
-     будет использовано CSS свойство "display: flex"
-     и в некоторых случаях "display: table". -->
+<!DOCTYPE html>
 <html lang="ru">
+
 <head>
 
-<meta http-eqiuv="content-type" content="text/html" charset="UTF-8">
+<meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="styles.css">
 <link rel="shortcut icon" href="wbp_logo.png" type="image/png">
 <title>Калькулятор - World Bank Publications</title>
@@ -18,7 +14,7 @@
 <header>
 
   <div class="logo">
-    <img src="wbp_logo.png">
+    <img src="wbp_logo.png" alt="World Bank Publications Logo">
     <div class="text">
       <div class="uppercase">world bank</div>
       <div class="capitalize">publications</div>
@@ -59,4 +55,4 @@
 </footer>
 
 </body>
-<html>
+</html>
