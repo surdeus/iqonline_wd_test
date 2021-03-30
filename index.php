@@ -65,8 +65,6 @@
     <div class="center">
       <input id="sum" type="number" min="1000" max="3000000" value="1000">
     </div>
-    <!-- Библиотека не использована, т. к. это легко реализуется
-           встроенными возможностями DOM-модели. -->
     <div class="right"><input id="sum-range" type="range"
       min="1000" step="1000" max="3000000"
       oninput="updateNumberByRange('sum')"></div>
@@ -114,9 +112,8 @@
   </div>
 
   <div class="line">
-    <div class="left">
-      <button type="submit">Рассчитать</button>
-    </div>
+      <button type="button" onclick="loadCalculation()">Рассчитать</button>
+      <div id="calculation"></div>
   </div>
 </form>
 
