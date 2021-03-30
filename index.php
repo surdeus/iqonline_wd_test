@@ -48,49 +48,75 @@
 </ul>
 
 <form id="calc-form" class="calc" action="" method="post">
+  <div class="line"><div class="left center"><h1>Калькулятор</h1></div></div>
   <div class="line">
+  <div class="left">
     <label for="date">Дата оформления вклада</label>
-    <input id="date" type="date"></input>
-  <line>
+  </div>
+  <div class="center">
+    <input id="date" type="date">
+  </div>
+  </div>
 
-  <div class="line">  
-    <label for="sum">Сумма вклада</label>
-    <input id="sum" type="number" min="1000" max="3000000" value="1000"></input>
+  <div class="line">
+    <div class="left">  
+      <label for="sum">Сумма вклада</label>
+    </div>
+    <div class="center">
+      <input id="sum" type="number" min="1000" max="3000000" value="1000">
+    </div>
     <!-- Библиотека не использована, т. к. это легко реализуется
-         встроенными возможностями DOM-модели -->
-    <input id="sum-range" class="range" type="range"
+           встроенными возможностями DOM-модели. -->
+    <div class="right"><input id="sum-range" type="range"
       min="1000" step="1000" max="3000000"
-      oninput="updateNumberByRange('sum')"></input>
+      oninput="updateNumberByRange('sum')"></div>
   </div>
-
-  <div class="line">
-    <label for="time" >Срок вклада</label>
-    <select name="time" id="time">
-      <option value="1">1 год</option>
-      <option value="2">2 года</option>
-      <option value="3">3 года</option>
-      <option value="4">4 года</option>
-      <option value="5">5 лет</option>
-    </select>
-  </div>
-
   
-  <div id="should-refill" class="line">
-    <label for="should-refill">Пополнение вклада</label>
-    <input type="radio" name="should-refill" value="no" checked>Нет</input>
-    <input type="radio" name="should-refill" value="yes">Да</input>
+  <div class="line">
+    <div class="left">
+      <label for="time" >Срок вклада</label>
+    </div>
+    <div class="center">
+      <select name="time" id="time">
+        <option value="1">1 год</option>
+        <option value="2">2 года</option>
+        <option value="3">3 года</option>
+        <option value="4">4 года</option>
+        <option value="5">5 лет</option>
+      </select>
+    </div>
+  </div>
+
+
+  <div class="line">
+    <div class="left">
+      <label for="should-refill">Пополнение вклада</label>
+    </div>
+    <div id="should-refill" class="center">
+      <input type="radio" name="should-refill" value="no" checked>
+      <label for="should-refill-no">Нет</label>
+      <input id="should-refill-yes" type="radio" name="should-refill" value="yes">
+      <label for="should-refill-yes">Да</label>
+    </div>
+  </div>
+  
+  <div class="line">
+    <div class="left">
+      <label for="subadj">Сумма пополнения</label>
+    </div>
+    <div class="center">
+      <input id="sumadj" type="number"
+          min="1000" step="1000" max="3000000" value="1000">
+    </div>
+    <div class="right"><input id="sumadj-range" type="range"
+        min="1000" step="1000" max="3000000"
+        oninput="updateNumberByRange('sumadj')"></div>
   </div>
 
   <div class="line">
-    <label for="subadj">Сумма пополнения</label>
-    <input id="sumadj" type="number" min="1000" max="3000000" value="1000"></input>
-    <input id="sumadj-range" class="range" type="range"
-      min="1000" step="1000" max="3000000"
-      oninput="updateNumberByRange('sumadj')"></input>
-  </div>
-
-  <div class="line">
-    <button type="submit">Рассчитать</button>
+    <div class="left">
+      <button type="submit">Рассчитать</button>
+    </div>
   </div>
 </form>
 

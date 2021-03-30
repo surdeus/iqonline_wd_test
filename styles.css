@@ -1,10 +1,3 @@
-/*
-Я бы использовал вместо CSS SASS-препроцессор.
-Также в задании не было указано, как страница
-должна отображаться при разных размерах,
-так что для соответсвия будет использовано CSS свойство,
-"display: flex" и в некоторых случаях "display: table".
-*/
 
 html {
   margin-top : 0em ;
@@ -137,13 +130,55 @@ ul.breadcrumb li:last-of-type a {
 }
 
 /* Calculator. */
+form.calc {
+  background : #f2f2f2 ;
+  padding : 1.5em ;
+  margin : 2em ;
+  width : 85% ;
+}
 
-form.line {
+form.calc .left.center {
+  width : 23em ;
+}
+
+form.calc .line {
   display : flex ;
   flex-direction : row ;
   flex-wrap : wrap ;
+  margin : 1em ;
+  margin-left : 2% ;
 }
 
+input,select {
+  width : 7em ;
+}
+
+input[type="radio"] {
+  display : inline ;
+  width : 2em ;
+}
+
+form.calc .line .left {
+  width : 15em ;
+  text-align : right ;
+}
+
+form.calc .line .center {
+  text-align : right ;
+  width : 8em ;
+}
+
+#should-refill {
+  text-align : left ;
+  width : 12em ;
+}
+
+form.calc .line .right {
+}
+
+input[type="submit"] {
+  text-align : left ;
+}
 
 /* Footer. */
 
@@ -157,7 +192,6 @@ footer {
   flex-direction : row ;
   flex-wrap : wrap ;
   justify-content : left ;
-
   color : #ffffff ;
   background : #231f20 ;
   padding-top : 0.5em ;
