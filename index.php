@@ -8,6 +8,18 @@
 <link rel="shortcut icon" href="wbp_logo.png" type="image/png">
 <script src="script.js"></script>
 
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+
+
 <title>Калькулятор - World Bank Publications</title>
   
 </head>
@@ -54,7 +66,7 @@
     <label for="date">Дата оформления вклада</label>
   </div>
   <div class="center">
-    <input id="date" type="date">
+    <input id="datepicker" type="text" name="date">
   </div>
   </div>
 
@@ -63,7 +75,7 @@
       <label for="sum">Сумма вклада</label>
     </div>
     <div class="center">
-      <input id="sum" type="number" min="1000" max="3000000" value="1000">
+      <input id="sum" type="number" min="1000" step="1000" max="3000000" value="1000">
     </div>
     <div class="right"><input id="sum-range" type="range"
       min="1000" step="1000" max="3000000"
