@@ -75,7 +75,7 @@
       <label for="sum">Сумма вклада</label>
     </div>
     <div class="center">
-      <input id="sum" type="number" min="1000" step="1000" max="3000000" value="1000">
+      <input id="sum" name="sum" type="number" min="1000" step="1000" max="3000000" value="1000">
     </div>
     <div class="right"><input id="sum-range" type="range"
       min="1000" step="1000" max="3000000"
@@ -112,10 +112,10 @@
   
   <div class="line">
     <div class="left">
-      <label for="subadj">Сумма пополнения</label>
+      <label for="sumadj">Сумма пополнения</label>
     </div>
     <div class="center">
-      <input id="sumadj" type="number"
+      <input id="sumadj" type="number" name="sumadj"
           min="1000" step="1000" max="3000000" value="1000">
     </div>
     <div class="right"><input id="sumadj-range" type="range"
