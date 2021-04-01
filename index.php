@@ -8,8 +8,8 @@
 <link rel="shortcut icon" href="wbp_logo.png" type="image/png">
 <script src="script.js"></script>
 
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://code.jquery/resources/demos/style.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
@@ -60,7 +60,7 @@
 </ul>
 
 <form id="calc-form" class="calc" action="" method="post">
-  <div class="line"><div class="left center"><h1>Калькулятор</h1></div></div>
+  <div class="line"><h1>Калькулятор</h1></div>
   <div class="line">
   <div class="left">
     <label for="date">Дата оформления вклада</label>

@@ -132,21 +132,9 @@ ul.breadcrumb li:last-of-type a {
 /* Calculator. */
 form.calc {
   background : #f2f2f2 ;
-  padding : 1.5em ;
   margin : 2em ;
-  width : 85% ;
-}
-
-form.calc .left.center {
-  width : 23em ;
-}
-
-form.calc .line {
-  display : flex ;
-  flex-direction : row ;
-  flex-wrap : wrap ;
-  margin : 1em ;
-  margin-left : 2% ;
+  width : 80% ;
+  padding-bottom : 3em ;
 }
 
 input,select {
@@ -158,26 +146,84 @@ input[type="radio"] {
   width : 2em ;
 }
 
+input[type="range"] {
+  width : 20em ;
+  height : 0.6em ;
+  background : #000000 ;
+  border-style : solid ;
+  border-color : #ffffff ;
+  border-width : 0.2em ;
+  border-radius : 1em ;
+}
+
+input[type="range"]::-moz-range-progress {
+  height : 0.3em ;
+  background-color : #93bb38 ;
+}
+
+input[type="range"]::-moz-range-track {
+  background-color : #000000 ;
+}
+
+form.calc .line {
+  display : flex ;
+  flex-direction : row ;
+  flex-wrap : wrap ;
+  align-items : center ;
+  margin : 1em ;
+  margin-left : 1em ;
+}
+
+form.calc .line h1 {
+  position : relative ;
+  color : #eb5017 ;
+  left : 10% ;
+}
+
 form.calc .line .left {
   width : 15em ;
   text-align : right ;
 }
 
 form.calc .line .center {
-  text-align : right ;
+  margin-left : 1em ;
+  text-align : left ;
   width : 8em ;
 }
 
 #should-refill {
   text-align : left ;
   width : 12em ;
+  margin-left : 0.5em ;
 }
 
 form.calc .line .right {
+  flex-grow : 100 ;
 }
 
-input[type="submit"] {
-  text-align : left ;
+form.calc .line:last-of-type {
+  margin-top : 2em ;
+  margin-left : 2em ;
+  align-text : left ;
+}
+form.calc button {
+  background : linear-gradient(#d0fb28, #7dc606) ;
+  padding : 1em ;
+  padding-top : 0.7em ;
+  padding-bottom : 0.7em ;
+  border-style : solid ;
+  border-radius : 1em ;
+}
+
+form.calc .result {
+  margin-left : 2em ;
+}
+
+form.calc .result .title {
+  color : #5a663d ;
+}
+
+form.calc .result .value {
 }
 
 /* Footer. */

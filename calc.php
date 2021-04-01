@@ -12,5 +12,6 @@ if($_POST["should-refill"] == "1" ){
 
 $sum = $sumprev+($sumprev+$sumadd)*$ndays*($percent/$ydays) ;
 
-echo "$sum" ;
+echo "<div class='result'><span class='title'>Результат: </span>
+	<span class='value'>$sum</span</div>" ;
 ?>
